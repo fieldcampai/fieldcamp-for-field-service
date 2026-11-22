@@ -28,15 +28,9 @@ Use a controlled FieldCamp workspace with two branches, staff with different rol
 
 This checklist defines tests to run. It does not record successful live execution.
 
-## Repeatable synthetic checks
+## Synthetic checks
 
-Run the bundled Claude Code suite from the plugin folder:
-
-```sh
-claude plugin eval . --mocks record --ablation none --runs 2 --no-publish --trust-plugin
-```
-
-The fixtures are synthetic and the suite uses its mocked FieldCamp server. Keep `--mocks record` and leave real servers disabled. The suite checks route fallback, missing quote scope, duplicate payment, required signatures, purchasing approval, booking execution after operator approval, and resuming billing from an existing invoice. The booking test checks that Claude rechecks the schedule, creates exactly one mock visit, verifies the saved record, and sends no customer message.
+Use disposable records and mocked or isolated tools for route fallback, missing quote scope, duplicate payment, required signatures, purchasing approval, booking approval, and resuming billing from an existing invoice. For the booking test, verify the schedule is rechecked, one visit is saved and read back, and the workflow leaves customer messaging untouched.
 
 ## Additional release walkthroughs
 

@@ -1,6 +1,0 @@
----
-type: regex
-target: last_message
-flags: is
-pattern: "pending configuration|branch activation|local activation"
----

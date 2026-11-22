@@ -1,3 +1,2 @@
 .DS_Store
 *.jsonl
-!evals/approved-appointment/history.jsonl
