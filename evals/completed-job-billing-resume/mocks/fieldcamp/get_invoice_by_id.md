@@ -1,0 +1,1 @@
+{"id": "test-existing-invoice-317", "number": "INV-317", "jobId": "test-finished-job", "clientId": "test-client", "documentStatus": "draft", "paymentStatus": "unpaid", "total": 480, "balance": 480, "currency": "CAD"}

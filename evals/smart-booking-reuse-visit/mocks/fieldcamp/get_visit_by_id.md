@@ -1,0 +1,1 @@
+{"id": "test-smart-visit", "number": "V-621", "jobId": "test-smart-job", "status": "scheduled", "branch": "Toronto", "start": "2026-11-26T14:00:00Z", "end": "2026-11-26T16:00:00Z", "confirmed": true}

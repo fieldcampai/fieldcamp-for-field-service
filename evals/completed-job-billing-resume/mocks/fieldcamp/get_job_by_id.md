@@ -1,0 +1,1 @@
+{"id": "test-finished-job", "number": "J-317", "clientId": "test-client", "requestId": "test-original-request", "status": "completed", "branch": "Toronto", "completedAt": "2026-11-20T20:00:00Z", "invoices": [{"id": "test-existing-invoice-317", "number": "INV-317"}]}

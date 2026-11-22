@@ -1,0 +1,227 @@
+{
+  "tools": [
+    {
+      "name": "get_company_info",
+      "description": "Get the active workspace identity and timezone.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "get_inventory",
+      "description": "List inventory balances at the selected warehouse.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "get_dispatch_suggestions",
+      "description": "Read the unassigned dispatch queue and technician recommendations.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "get_payment_history",
+      "description": "List transactions already logged on the FieldCamp document.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "documentId": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "name": "record_payment",
+      "description": "Writes a manual payment against a document that already received funds.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "documentId": {
+            "type": "string"
+          },
+          "amount": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    {
+      "name": "get_visit_by_id",
+      "description": "Read current visit status and assigned job.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "visit_id": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "name": "get_data_model",
+      "description": "Read a FieldCamp pipeline and required fields for state transitions.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "object_type": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "name": "update_visit",
+      "description": "Write the status or assignment of a visit.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "visitId": {
+            "type": "string"
+          },
+          "jobId": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "name": "create_purchase_order",
+      "description": "Creates a purchase order in FieldCamp.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "po_data": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    {
+      "name": "send_document_email",
+      "description": "Sends a document email from FieldCamp.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "to": {
+            "type": "array"
+          },
+          "subject": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "name": "convert_request_to_estimate",
+      "description": "Save an estimate and move the request stage to converted.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "request_id": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "name": "create_document",
+      "description": "Create an estimate or invoice.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "document_data": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    {
+      "name": "get_job_by_id",
+      "description": "Read a job by ID.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "job_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id"
+        ]
+      }
+    },
+    {
+      "name": "get_visits_for_job",
+      "description": "Read the visits and statuses of a job.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "job_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id"
+        ]
+      }
+    },
+    {
+      "name": "get_invoices",
+      "description": "Search invoices or estimates by type and filters.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "documentType": {
+            "type": "integer"
+          },
+          "filters": {
+            "type": "array"
+          }
+        },
+        "required": [
+          "documentType",
+          "filters"
+        ]
+      }
+    },
+    {
+      "name": "get_invoice_by_id",
+      "description": "Read exact invoice status and balance.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "document_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "document_id"
+        ]
+      }
+    },
+    {
+      "name": "get_request_by_id",
+      "description": "Read source request by ID.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "request_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "request_id"
+        ]
+      }
+    }
+  ]
+}

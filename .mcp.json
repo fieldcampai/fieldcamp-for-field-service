@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "fieldcamp": {
+      "type": "http",
+      "url": "https://mcp.fieldcamp.ai/mcp"
+    },
+    "fieldcamp-dispatcher": {
+      "type": "http",
+      "url": "https://dispatcher.fieldcamp.ai/api/mcp"
+    }
+  }
+}

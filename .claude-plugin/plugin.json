@@ -1,0 +1,21 @@
+{
+  "name": "fieldcamp-for-field-service",
+  "displayName": "FieldCamp for Field Service",
+  "version": "0.5.0",
+  "description": "Use FieldCamp and AI Dispatcher in Claude to review requests, prepare estimates, book and dispatch jobs, and reconcile closeout and billing.",
+  "author": {
+    "name": "FieldCamp",
+    "email": "support@fieldcamp.ai",
+    "url": "https://fieldcamp.ai"
+  },
+  "homepage": "https://docs.fieldcamp.ai/integrations/mcp-server",
+  "privacyPolicyUrl": "https://fieldcamp.ai/privacy-policy/",
+  "keywords": [
+    "field-service",
+    "dispatch",
+    "scheduling",
+    "crm",
+    "estimates"
+  ],
+  "license": "MIT"
+}
