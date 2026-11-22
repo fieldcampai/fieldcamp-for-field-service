@@ -1,7 +1,7 @@
 {
   "name": "fieldcamp-for-field-service",
   "displayName": "FieldCamp for Field Service",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Use FieldCamp and AI Dispatcher in Claude to review requests, prepare estimates, book and dispatch jobs, and reconcile closeout and billing.",
   "author": {
     "name": "FieldCamp",

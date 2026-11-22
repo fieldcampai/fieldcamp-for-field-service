@@ -1,11 +1,13 @@
 ---
 name: setup
-description: Set up FieldCamp in Claude, check which branch and tools are connected, or explain which field-service workflows are ready. Use when a team says set us up, connects or changes a workspace, or asks what Claude can do in FieldCamp.
+description: Set up FieldCamp in Claude, check which branch and tools are connected, explain which field-service workflows are ready, or give standalone FieldCamp Voice connection instructions. Use when a team says set us up, connects or changes a workspace, or asks what Claude can do in FieldCamp.
 ---
 
 # Set up FieldCamp
 
 Read [operating rules](../../shared/operating-rules.md) and the [tool map](../../shared/tools.md). Setup is a read-only walkthrough.
+
+If the user asks to connect FieldCamp Voice, provide the [optional FieldCamp Voice setup](../../README.md#optional-fieldcamp-voice-setup). For a Voice-only request, give the manual setup steps and finish there. The user or their workspace administrator adds the connector and approves the OAuth sign-in.
 
 1. Find the connected FieldCamp server and look for `get_company_info`. If the connector is missing or OAuth is required, give the connection step from the [README](../../README.md) and stop. On denied access, distinguish role or scope problems from a disconnected account when the tool provides enough evidence.
 2. Read the workspace identity and base settings with `get_company_info`. Where available, use `get_company_schedule`, `get_teams`, `get_job_types` and targeted `get_data_model` calls to confirm the relevant location, service types, business hours, timezone and pipeline. Ask which branch the operator wants when there is more than one or the connector does not identify it.

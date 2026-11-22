@@ -8,6 +8,16 @@ FieldCamp for Field Service helps dispatchers, estimators and office teams turn 
 2. Start with “Set us up for FieldCamp. Verify the workspace, branch and timezone and summarize the connector capabilities.”
 3. Use the workspace and existing record references confirmed in setup. For features the connector cannot reach, the plugin gives the operator a FieldCamp handoff.
 
+## Optional FieldCamp Voice setup
+
+A FieldCamp Voice account can connect to Claude on its own. This is a separate sign-in administered in Claude’s connector settings.
+
+1. In an individual Claude account, open **Customize → Connectors → Add → Add custom connector**. On Team or Enterprise, an authorized owner or admin adds it in **Organization settings → Connectors → Add → Custom → Web**. Members then connect from **Customize → Connectors**.
+2. Name the connector **FieldCamp Voice** and enter `https://voice.fieldcamp.ai/api/v1/mcp/`, including the trailing slash. Use OAuth sign-in. If Claude asks how to register its OAuth client, choose **Register automatically**.
+3. Sign in with your FieldCamp Voice account and select the intended Voice organization. Once connected, enable **FieldCamp Voice** in a conversation and try “List my FieldCamp Voice agents.”
+
+[Claude custom connector setup](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp) · [FieldCamp Voice guide](https://docs.fieldcamp.ai/ai-receptionist/voice-app-tour)
+
 ## Try these workflows
 
 - “Find the service request I give you, summarize the site and requested work, and give me an estimate draft for review.” Supplies a quote proposal with materials, labor and any missing information. [Quote a job](skills/quote-a-job/SKILL.md)
